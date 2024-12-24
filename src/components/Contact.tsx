@@ -37,25 +37,33 @@ const Contact = () => {
             </BlurredText>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-              <motion.a
-                href="mailto:luka@lukakauzlaric.com"
-                whileHover={{ scale: 1.02 }}
-                className="flex items-center space-x-3 bg-black/40 backdrop-blur-sm px-6 py-4 rounded-lg 
-                  border border-cream/10 hover:border-cream/20 transition-colors duration-300"
-              >
-                <Mail size={20} className="text-coral" />
-                <span className="text-cream tracking-wider">luka@lukakauzlaric.com</span>
-              </motion.a>
+              <BlurredText intensity="medium">
+                <motion.a
+                  href="mailto:luka@lukakauzlaric.com"
+                  whileHover={{ scale: 1.02 }}
+                  className="group flex items-center space-x-3 bg-black/10 backdrop-blur-sm px-6 py-4 rounded-lg 
+                    border border-cream/5 hover:border-cream/20 transition-all duration-300"
+                >
+                  <Mail size={20} className="text-coral group-hover:text-cream transition-colors duration-300" />
+                  <span className="text-cream/60 group-hover:text-cream tracking-wider transition-colors duration-300">
+                    luka@lukakauzlaric.com
+                  </span>
+                </motion.a>
+              </BlurredText>
 
-              <motion.a
-                href="tel:+4550138337"
-                whileHover={{ scale: 1.02 }}
-                className="flex items-center space-x-3 bg-black/40 backdrop-blur-sm px-6 py-4 rounded-lg 
-                  border border-cream/10 hover:border-cream/20 transition-colors duration-300"
-              >
-                <Phone size={20} className="text-coral" />
-                <span className="text-cream tracking-wider">+45 50 13 83 37</span>
-              </motion.a>
+              <BlurredText intensity="medium">
+                <motion.a
+                  href="tel:+4550138337"
+                  whileHover={{ scale: 1.02 }}
+                  className="group flex items-center space-x-3 bg-black/10 backdrop-blur-sm px-6 py-4 rounded-lg 
+                    border border-cream/5 hover:border-cream/20 transition-all duration-300"
+                >
+                  <Phone size={20} className="text-coral group-hover:text-cream transition-colors duration-300" />
+                  <span className="text-cream/60 group-hover:text-cream tracking-wider transition-colors duration-300">
+                    +45 50 13 83 37
+                  </span>
+                </motion.a>
+              </BlurredText>
             </div>
           </motion.div>
         </Flicker>

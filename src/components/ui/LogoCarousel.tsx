@@ -15,7 +15,7 @@ const clients = [
 
 const LogoCarousel: React.FC = () => {
   return (
-    <div className="w-full overflow-hidden bg-black/40 backdrop-blur-sm py-8">
+    <div className="w-full overflow-hidden py-8">
       <BlurredText intensity="medium">
         <motion.div
           className="flex space-x-16 items-center"

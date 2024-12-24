@@ -37,10 +37,10 @@ const ShowreelSection: React.FC = () => {
       <div className="relative w-full max-w-7xl mx-auto px-4 mt-8">
         <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
           <iframe
-            src="https://player.vimeo.com/video/900084461"
+            src="https://player.vimeo.com/video/900084461?h=7c1c48f8f1&controls=1&title=1&byline=1&portrait=1"
             className="absolute top-0 left-0 w-full h-full"
             frameBorder="0"
-            allow="fullscreen"
+            allow="autoplay; fullscreen"
             allowFullScreen
             title="Showreel 2024 - Luka Kauzlaric"
           />
