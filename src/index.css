@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Archivo Narrow', sans-serif;
+  }
+  
+  body {
+    @apply bg-gradient-to-b from-[#121212] to-[#1a1a1a] min-h-screen text-white;
+    background-attachment: fixed;
+  }
+}
+
+.font-archivo-narrow {
+  font-family: 'Archivo Narrow', sans-serif;
+}
